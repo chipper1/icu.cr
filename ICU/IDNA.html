@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.27.0">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../";
+</script>
+
+  <meta id="repository-name" content="github.com/olbat/icu.cr">
+  <title>ICU::IDNA - github.com/olbat/icu.cr</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/toplevel" data-name="top level namespace">
+      <a href="../toplevel.html">Top Level Namespace</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/Char" data-name="char">
+      <a href="../Char.html">Char</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/olbat/icu.cr/ICU" data-name="icu">
+      <a href="../ICU.html">ICU</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="github.com/olbat/icu.cr/ICU/BreakIterator" data-name="icu::breakiterator">
+      <a href="../ICU/BreakIterator.html">BreakIterator</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/BreakIterator/Type" data-name="icu::breakiterator::type">
+      <a href="../ICU/BreakIterator/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/olbat/icu.cr/ICU/CharsetDetector" data-name="icu::charsetdetector">
+      <a href="../ICU/CharsetDetector.html">CharsetDetector</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/CharsetDetector/CharsetMatch" data-name="icu::charsetdetector::charsetmatch">
+      <a href="../ICU/CharsetDetector/CharsetMatch.html">CharsetMatch</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/olbat/icu.cr/ICU/Collator" data-name="icu::collator">
+      <a href="../ICU/Collator.html">Collator</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Collator/Attribute" data-name="icu::collator::attribute">
+      <a href="../ICU/Collator/Attribute.html">Attribute</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Collator/AttributeValue" data-name="icu::collator::attributevalue">
+      <a href="../ICU/Collator/AttributeValue.html">AttributeValue</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Collator/BoundMode" data-name="icu::collator::boundmode">
+      <a href="../ICU/Collator/BoundMode.html">BoundMode</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Collator/ReorderCode" data-name="icu::collator::reordercode">
+      <a href="../ICU/Collator/ReorderCode.html">ReorderCode</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Collator/RuleOption" data-name="icu::collator::ruleoption">
+      <a href="../ICU/Collator/RuleOption.html">RuleOption</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Collator/Strength" data-name="icu::collator::strength">
+      <a href="../ICU/Collator/Strength.html">Strength</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/olbat/icu.cr/ICU/Currencies" data-name="icu::currencies">
+      <a href="../ICU/Currencies.html">Currencies</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Currencies/NameStyle" data-name="icu::currencies::namestyle">
+      <a href="../ICU/Currencies/NameStyle.html">NameStyle</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Currencies/Type" data-name="icu::currencies::type">
+      <a href="../ICU/Currencies/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Error" data-name="icu::error">
+      <a href="../ICU/Error.html">Error</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/olbat/icu.cr/ICU/IDNA" data-name="icu::idna">
+      <a href="../ICU/IDNA.html">IDNA</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/IDNA/Option" data-name="icu::idna::option">
+      <a href="../ICU/IDNA/Option.html">Option</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/olbat/icu.cr/ICU/Locale" data-name="icu::locale">
+      <a href="../ICU/Locale.html">Locale</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Locale/Keyword" data-name="icu::locale::keyword">
+      <a href="../ICU/Locale/Keyword.html">Keyword</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/NFCNormalizer" data-name="icu::nfcnormalizer">
+      <a href="../ICU/NFCNormalizer.html">NFCNormalizer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/NFDNormalizer" data-name="icu::nfdnormalizer">
+      <a href="../ICU/NFDNormalizer.html">NFDNormalizer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/NFKCCFNormalizer" data-name="icu::nfkccfnormalizer">
+      <a href="../ICU/NFKCCFNormalizer.html">NFKCCFNormalizer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/NFKCNormalizer" data-name="icu::nfkcnormalizer">
+      <a href="../ICU/NFKCNormalizer.html">NFKCNormalizer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/NFKDNormalizer" data-name="icu::nfkdnormalizer">
+      <a href="../ICU/NFKDNormalizer.html">NFKDNormalizer</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/olbat/icu.cr/ICU/Normalizer" data-name="icu::normalizer">
+      <a href="../ICU/Normalizer.html">Normalizer</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Normalizer/CheckResult" data-name="icu::normalizer::checkresult">
+      <a href="../ICU/Normalizer/CheckResult.html">CheckResult</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Normalizer/Mode" data-name="icu::normalizer::mode">
+      <a href="../ICU/Normalizer/Mode.html">Mode</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Normalizer/Type" data-name="icu::normalizer::type">
+      <a href="../ICU/Normalizer/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Region" data-name="icu::region">
+      <a href="../ICU/Region.html">Region</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/olbat/icu.cr/ICU/StringSearch" data-name="icu::stringsearch">
+      <a href="../ICU/StringSearch.html">StringSearch</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/StringSearch/Attribute" data-name="icu::stringsearch::attribute">
+      <a href="../ICU/StringSearch/Attribute.html">Attribute</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/StringSearch/AttributeValue" data-name="icu::stringsearch::attributevalue">
+      <a href="../ICU/StringSearch/AttributeValue.html">AttributeValue</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/StringSearch/Position" data-name="icu::stringsearch::position">
+      <a href="../ICU/StringSearch/Position.html">Position</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/olbat/icu.cr/ICU/Transliterator" data-name="icu::transliterator">
+      <a href="../ICU/Transliterator.html">Transliterator</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Transliterator/ID" data-name="icu::transliterator::id">
+      <a href="../ICU/Transliterator/ID.html">ID</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/UChar" data-name="icu::uchar">
+      <a href="../ICU/UChar.html">UChar</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/UChars" data-name="icu::uchars">
+      <a href="../ICU/UChars.html">UChars</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/UEnum" data-name="icu::uenum">
+      <a href="../ICU/UEnum.html">UEnum</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/olbat/icu.cr/ICU/UniversalTimeScale" data-name="icu::universaltimescale">
+      <a href="../ICU/UniversalTimeScale.html">UniversalTimeScale</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/UniversalTimeScale/DateTimeScale" data-name="icu::universaltimescale::datetimescale">
+      <a href="../ICU/UniversalTimeScale/DateTimeScale.html">DateTimeScale</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/UniversalTimeScale/TimeScaleValues" data-name="icu::universaltimescale::timescalevalues">
+      <a href="../ICU/UniversalTimeScale/TimeScaleValues.html">TimeScaleValues</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/UniversalTimeScale/UniversalTime" data-name="icu::universaltimescale::universaltime">
+      <a href="../ICU/UniversalTimeScale/UniversalTime.html">UniversalTime</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/String" data-name="string">
+      <a href="../String.html">String</a>
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> ICU::IDNA
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../ICU/IDNA.html">ICU::IDNA</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>Overview</h2>
+
+  <p><strong>International Domain Names in Applications</strong></p>
+
+<p>Implements <a href="http://unicode.org/reports/tr46/" target="_blank">UTS #46</a> and <a href="https://tools.ietf.org/html/rfc5890" target="_blank">IDNA2008</a>.</p>
+
+<p><strong>Usage</strong></p>
+
+<pre><code>dn <span class="o">=</span> <span class="t">ICU</span><span class="t">::</span><span class="t">IDNA</span>.to_ascii(<span class="s">&quot;افغانستا.icom.museum&quot;</span>)                             <span class="c"># =&gt; &quot;xn--mgbaal8b0b9b2b.icom.museum&quot;</span>
+<span class="t">ICU</span><span class="t">::</span><span class="t">IDNA</span>.to_unicode(dn)                                                    <span class="c"># =&gt; &quot;افغانستا.icom.museum&quot;</span>
+<span class="t">ICU</span><span class="t">::</span><span class="t">IDNA</span>.compare(<span class="s">&quot;افغانستا.icom.museum&quot;</span>, <span class="s">&quot;xn--mgbaal8b0b9b2b.icom.museum&quot;</span>) <span class="c"># =&gt; 0</span></code></pre>
+
+<p><strong>See also</strong></p>
+
+<ul><li><a href="http://icu-project.org/apiref/icu4c/uidna_8h.html" target="_blank">reference implementation</a></li><li><a href="http://userguide.icu-project.org/strings/stringprep#TOC-IDNA-API-in-ICU" target="_blank">user guide</a></li><li><a href="https://github.com/olbat/icu.cr/blob/master/spec/idna_spec.cr" target="_blank">unit tests</a></li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/olbat/icu.cr/blob/793ab10a495be59df4ee4ac1e2edd835d6e89efd/src/icu/idna.cr#L16" target="_blank">
+        icu/idna.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+  <h2>Class Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#compare%28idn1%3AString%2Cidn2%3AString%2Coptions%3AUInt32%3DOption%3A%3ADefault.to_u32%29%3AInt-class-method" class="signature"><strong>.compare</strong>(idn1 : String, idn2 : String, options : UInt32 = <span class="t">Option</span><span class="t">::</span><span class="t">Default</span>.to_u32) : Int</a>
+        
+          <div class="summary"><p>Compares two IDN strings (that can be in unicode or ascii representation)</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_ascii%28unicode_idn%3AString%2Coptions%3AUInt32%3DOption%3A%3ADefault.to_u32%29%3AString-class-method" class="signature"><strong>.to_ascii</strong>(unicode_idn : String, options : UInt32 = <span class="t">Option</span><span class="t">::</span><span class="t">Default</span>.to_u32) : String</a>
+        
+          <div class="summary"><p>Converts a Unicode IDN to it's ASCII representation</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_unicode%28ascii_idn%3AString%2Coptions%3AUInt32%3DOption%3A%3ADefault.to_u32%29%3AString-class-method" class="signature"><strong>.to_unicode</strong>(ascii_idn : String, options : UInt32 = <span class="t">Option</span><span class="t">::</span><span class="t">Default</span>.to_u32) : String</a>
+        
+          <div class="summary"><p>Converts an ASCII IDN to it's Unicode representation</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+  <h2>Class Method Detail</h2>
+  
+    <div class="entry-detail" id="compare(idn1:String,idn2:String,options:UInt32=Option::Default.to_u32):Int-class-method">
+      <div class="signature">
+        
+        def self.<strong>compare</strong>(idn1 : <a href="../String.html">String</a>, idn2 : <a href="../String.html">String</a>, options : UInt32 = <span class="t">Option</span><span class="t">::</span><span class="t">Default</span>.to_u32) : Int
+
+        <a class="method-permalink" href="#compare%28idn1%3AString%2Cidn2%3AString%2Coptions%3AUInt32%3DOption%3A%3ADefault.to_u32%29%3AInt-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Compares two IDN strings (that can be in unicode or ascii representation)</p>
+
+<pre><code><span class="t">ICU</span><span class="t">::</span><span class="t">IDNA</span>.compare(<span class="s">&quot;افغانستا.icom.museum&quot;</span>, <span class="s">&quot;xn--mgbaal8b0b9b2b.icom.museum&quot;</span>) <span class="c"># =&gt; 0</span></code></pre>
+
+<p>(see <code>String#compare</code>)</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/olbat/icu.cr/blob/793ab10a495be59df4ee4ac1e2edd835d6e89efd/src/icu/idna.cr#L70" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_ascii(unicode_idn:String,options:UInt32=Option::Default.to_u32):String-class-method">
+      <div class="signature">
+        
+        def self.<strong>to_ascii</strong>(unicode_idn : <a href="../String.html">String</a>, options : UInt32 = <span class="t">Option</span><span class="t">::</span><span class="t">Default</span>.to_u32) : <a href="../String.html">String</a>
+
+        <a class="method-permalink" href="#to_ascii%28unicode_idn%3AString%2Coptions%3AUInt32%3DOption%3A%3ADefault.to_u32%29%3AString-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Converts a Unicode IDN to it's ASCII representation</p>
+
+<pre><code><span class="t">ICU</span><span class="t">::</span><span class="t">IDNA</span>.to_ascii(<span class="s">&quot;افغانستا.icom.museum&quot;</span>) <span class="c"># =&gt; &quot;xn--mgbaal8b0b9b2b.icom.museum&quot;</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/olbat/icu.cr/blob/793ab10a495be59df4ee4ac1e2edd835d6e89efd/src/icu/idna.cr#L34" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_unicode(ascii_idn:String,options:UInt32=Option::Default.to_u32):String-class-method">
+      <div class="signature">
+        
+        def self.<strong>to_unicode</strong>(ascii_idn : <a href="../String.html">String</a>, options : UInt32 = <span class="t">Option</span><span class="t">::</span><span class="t">Default</span>.to_u32) : <a href="../String.html">String</a>
+
+        <a class="method-permalink" href="#to_unicode%28ascii_idn%3AString%2Coptions%3AUInt32%3DOption%3A%3ADefault.to_u32%29%3AString-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Converts an ASCII IDN to it's Unicode representation</p>
+
+<pre><code><span class="t">ICU</span><span class="t">::</span><span class="t">IDNA</span>.to_unicode(<span class="s">&quot;xn--mgbaal8b0b9b2b.icom.museum&quot;</span>) <span class="c"># =&gt; &quot;افغانستا.icom.museum&quot;</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/olbat/icu.cr/blob/793ab10a495be59df4ee4ac1e2edd835d6e89efd/src/icu/idna.cr#L51" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

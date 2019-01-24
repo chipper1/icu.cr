@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.27.0">
+
+
+<link href="../../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../../";
+</script>
+
+  <meta id="repository-name" content="github.com/olbat/icu.cr">
+  <title>ICU::Collator::RuleOption - github.com/olbat/icu.cr</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="../../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/toplevel" data-name="top level namespace">
+      <a href="../../toplevel.html">Top Level Namespace</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/Char" data-name="char">
+      <a href="../../Char.html">Char</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/olbat/icu.cr/ICU" data-name="icu">
+      <a href="../../ICU.html">ICU</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="github.com/olbat/icu.cr/ICU/BreakIterator" data-name="icu::breakiterator">
+      <a href="../../ICU/BreakIterator.html">BreakIterator</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/BreakIterator/Type" data-name="icu::breakiterator::type">
+      <a href="../../ICU/BreakIterator/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/olbat/icu.cr/ICU/CharsetDetector" data-name="icu::charsetdetector">
+      <a href="../../ICU/CharsetDetector.html">CharsetDetector</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/CharsetDetector/CharsetMatch" data-name="icu::charsetdetector::charsetmatch">
+      <a href="../../ICU/CharsetDetector/CharsetMatch.html">CharsetMatch</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/olbat/icu.cr/ICU/Collator" data-name="icu::collator">
+      <a href="../../ICU/Collator.html">Collator</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Collator/Attribute" data-name="icu::collator::attribute">
+      <a href="../../ICU/Collator/Attribute.html">Attribute</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Collator/AttributeValue" data-name="icu::collator::attributevalue">
+      <a href="../../ICU/Collator/AttributeValue.html">AttributeValue</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Collator/BoundMode" data-name="icu::collator::boundmode">
+      <a href="../../ICU/Collator/BoundMode.html">BoundMode</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Collator/ReorderCode" data-name="icu::collator::reordercode">
+      <a href="../../ICU/Collator/ReorderCode.html">ReorderCode</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/olbat/icu.cr/ICU/Collator/RuleOption" data-name="icu::collator::ruleoption">
+      <a href="../../ICU/Collator/RuleOption.html">RuleOption</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Collator/Strength" data-name="icu::collator::strength">
+      <a href="../../ICU/Collator/Strength.html">Strength</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/olbat/icu.cr/ICU/Currencies" data-name="icu::currencies">
+      <a href="../../ICU/Currencies.html">Currencies</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Currencies/NameStyle" data-name="icu::currencies::namestyle">
+      <a href="../../ICU/Currencies/NameStyle.html">NameStyle</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Currencies/Type" data-name="icu::currencies::type">
+      <a href="../../ICU/Currencies/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Error" data-name="icu::error">
+      <a href="../../ICU/Error.html">Error</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/olbat/icu.cr/ICU/IDNA" data-name="icu::idna">
+      <a href="../../ICU/IDNA.html">IDNA</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/IDNA/Option" data-name="icu::idna::option">
+      <a href="../../ICU/IDNA/Option.html">Option</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/olbat/icu.cr/ICU/Locale" data-name="icu::locale">
+      <a href="../../ICU/Locale.html">Locale</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Locale/Keyword" data-name="icu::locale::keyword">
+      <a href="../../ICU/Locale/Keyword.html">Keyword</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/NFCNormalizer" data-name="icu::nfcnormalizer">
+      <a href="../../ICU/NFCNormalizer.html">NFCNormalizer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/NFDNormalizer" data-name="icu::nfdnormalizer">
+      <a href="../../ICU/NFDNormalizer.html">NFDNormalizer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/NFKCCFNormalizer" data-name="icu::nfkccfnormalizer">
+      <a href="../../ICU/NFKCCFNormalizer.html">NFKCCFNormalizer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/NFKCNormalizer" data-name="icu::nfkcnormalizer">
+      <a href="../../ICU/NFKCNormalizer.html">NFKCNormalizer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/NFKDNormalizer" data-name="icu::nfkdnormalizer">
+      <a href="../../ICU/NFKDNormalizer.html">NFKDNormalizer</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/olbat/icu.cr/ICU/Normalizer" data-name="icu::normalizer">
+      <a href="../../ICU/Normalizer.html">Normalizer</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Normalizer/CheckResult" data-name="icu::normalizer::checkresult">
+      <a href="../../ICU/Normalizer/CheckResult.html">CheckResult</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Normalizer/Mode" data-name="icu::normalizer::mode">
+      <a href="../../ICU/Normalizer/Mode.html">Mode</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Normalizer/Type" data-name="icu::normalizer::type">
+      <a href="../../ICU/Normalizer/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Region" data-name="icu::region">
+      <a href="../../ICU/Region.html">Region</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/olbat/icu.cr/ICU/StringSearch" data-name="icu::stringsearch">
+      <a href="../../ICU/StringSearch.html">StringSearch</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/StringSearch/Attribute" data-name="icu::stringsearch::attribute">
+      <a href="../../ICU/StringSearch/Attribute.html">Attribute</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/StringSearch/AttributeValue" data-name="icu::stringsearch::attributevalue">
+      <a href="../../ICU/StringSearch/AttributeValue.html">AttributeValue</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/StringSearch/Position" data-name="icu::stringsearch::position">
+      <a href="../../ICU/StringSearch/Position.html">Position</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/olbat/icu.cr/ICU/Transliterator" data-name="icu::transliterator">
+      <a href="../../ICU/Transliterator.html">Transliterator</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/Transliterator/ID" data-name="icu::transliterator::id">
+      <a href="../../ICU/Transliterator/ID.html">ID</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/UChar" data-name="icu::uchar">
+      <a href="../../ICU/UChar.html">UChar</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/UChars" data-name="icu::uchars">
+      <a href="../../ICU/UChars.html">UChars</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/UEnum" data-name="icu::uenum">
+      <a href="../../ICU/UEnum.html">UEnum</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/olbat/icu.cr/ICU/UniversalTimeScale" data-name="icu::universaltimescale">
+      <a href="../../ICU/UniversalTimeScale.html">UniversalTimeScale</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/UniversalTimeScale/DateTimeScale" data-name="icu::universaltimescale::datetimescale">
+      <a href="../../ICU/UniversalTimeScale/DateTimeScale.html">DateTimeScale</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/UniversalTimeScale/TimeScaleValues" data-name="icu::universaltimescale::timescalevalues">
+      <a href="../../ICU/UniversalTimeScale/TimeScaleValues.html">TimeScaleValues</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/ICU/UniversalTimeScale/UniversalTime" data-name="icu::universaltimescale::universaltime">
+      <a href="../../ICU/UniversalTimeScale/UniversalTime.html">UniversalTime</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/olbat/icu.cr/String" data-name="string">
+      <a href="../../String.html">String</a>
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">alias</span> ICU::Collator::RuleOption
+
+</h1>
+
+
+
+
+
+
+
+  <h2>Alias Definition</h2>
+  <code>LibICU::UColRuleOption</code>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/olbat/icu.cr/blob/793ab10a495be59df4ee4ac1e2edd835d6e89efd/src/icu/collator.cr#L31" target="_blank">
+        icu/collator.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+  
+    <h2>Constant Summary</h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="FullRules">
+        <strong>FullRules</strong> = <code><span class="n">1</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="TailoringOnly">
+        <strong>TailoringOnly</strong> = <code><span class="n">0</span></code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+<div class="methods-inherited">
+  
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
